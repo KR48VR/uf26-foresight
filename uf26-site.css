@@ -113,6 +113,43 @@ h3 { font-size: 1.02rem; margin: 1.3rem 0 0.4rem; letter-spacing: -0.01em; }
   box-shadow: var(--shadow);
 }
 
+/* Start / Stop / Go */
+.ssg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0 22px;
+}
+.ssg-cell {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 14px 16px 16px;
+  box-shadow: var(--shadow);
+}
+.ssg-cell.start { border-top: 4px solid var(--green); }
+.ssg-cell.stop { border-top: 4px solid var(--rust); }
+.ssg-cell.go { border-top: 4px solid var(--gold); }
+.ssg-cell .kicker { margin-top: 0; }
+.ssg-cell ul { margin: 8px 0 0; padding-left: 1.1em; }
+.ssg-cell li { margin: 0 0 6px; font-size: 0.92rem; }
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 2px 6px;
+  margin-right: 6px;
+  border-radius: 2px;
+  vertical-align: 1px;
+}
+.badge.start { background: #215c43; color: #f6edd9; }
+.badge.stop { background: #b8431f; color: #f6edd9; }
+.badge.go { background: #a67c2d; color: #f6edd9; }
+@media (max-width: 800px) {
+  .ssg { grid-template-columns: 1fr; }
+}
+
 .page-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 34px; }
 .page-nav a {
   text-decoration: none; color: var(--ink);
@@ -362,3 +399,87 @@ table.compact td:last-child { color: var(--ink-2); }
   border: 1px solid #3a342c;
 }
 .student .viz-poster { margin-top: 6px; }
+
+/* clusters */
+.cluster-frame {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--rust);
+  padding: 22px 24px 18px;
+  margin: 0 0 28px;
+  box-shadow: var(--shadow);
+}
+.cluster-frame.b { border-left-color: var(--green); }
+.cluster-frame.c { border-left-color: var(--navy); }
+.cluster-frame .kicker { letter-spacing: .12em; text-transform: uppercase; font-size: 11px; color: var(--muted); }
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+.chip-row a {
+  display: inline-block;
+  padding: 6px 10px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+}
+.chip-row a:hover { background: var(--rust-s); border-color: var(--rust); }
+.forecast-note {
+  background: var(--navy);
+  color: var(--cream);
+  padding: 22px 24px;
+  margin: 32px 0 12px;
+}
+.forecast-note a { color: #f3d3c4; }
+
+
+/* ——— cousin chips (A/B/C) ——— */
+.cousins {
+  margin: 8px 0 22px;
+  padding: 12px 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+.cousins .ck {
+  display: block;
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--rust);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.cousins .crow { margin: 3px 0; }
+.cousins a { text-decoration: none; }
+.cousins a:hover { text-decoration: underline; }
+.cousins .cut {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin-right: 6px;
+}
+
+.cousin-strip {
+  margin: 18px 0 8px;
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+.cousin-strip .kicker { margin: 0 0 6px; }
+.cousin-strip a {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  padding: 4px 8px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 13px;
+}
+.cousin-strip a:hover { background: var(--rust-s); border-color: var(--rust); }
+
+.ssg-student-stop { margin: 12px 0 8px; }
