@@ -1,0 +1,16 @@
+UF26 — upload to GitHub Pages
+==============================
+Repo already created: https://github.com/KR48VR/uf26-foresight
+
+1. Unzip this file. Open the folder uf26-foresight-packs.
+2. On the repo: Add file → Upload files.
+3. Drag EVERYTHING inside uf26-foresight-packs onto the page
+   (index.html, uf26-*.html, uf26-site.css, visuals/).
+   Do NOT drag the outer folder itself — files must sit at the repo root.
+4. Commit to main.
+5. Settings → Pages → Deploy from a branch → main → / (root). Save.
+
+Live site after a minute:
+https://kr48vr.github.io/uf26-foresight/
+
+Need at root: index.html + uf26-site.css + the 30 uf26-*.html packs + visuals/
